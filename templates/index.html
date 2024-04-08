@@ -4,3 +4,13 @@
 
 
 {% block body %} Hello world! {% endblock %}
+
+{% block body %}
+  <img
+    src="{{ url_for('static', filename='images/above_ground_vertical_tanks.jpg') }}"
+  />
+
+  <p>
+    Lorem ipsum dolor sit amet, ...
+  </p>
+{% endblock %}
