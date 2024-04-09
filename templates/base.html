@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index page</title>
+    <title>{% block title %} {% endblock%}</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.css') }}">
 </head>
 <body>
-    <a href="about">Learn about us</a>
-    {% block body %}
-    {% endblock %}
+    <div>
+        <h1>Welcome to our salary predictor</h1>
+        <a href="about">Learn about us</a>
+        <hr>
+        <br>
+        
+        {% block body %}
+
+        {% endblock %}
+    </div>
 </body>
 </html>

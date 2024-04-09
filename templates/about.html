@@ -1,9 +1,10 @@
+{% block body %}
 <img
-src="{{ url_for('static', filename='images/FlaskPic.jpg') }}"
+src="{{ url_for('static', filename='images/FlaskPic.jpg') }}" style="height: 300px; width: 400px;"
 />  
-<p>
-    This website was created by Ben Onderick and Sam Starnes
-  </p>
 
 
 
+  {% endblock %}
+
+<h1>This repository was worked on by Ben Onderick and Sam Starnes </h1>
